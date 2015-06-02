@@ -1,0 +1,14 @@
+NAME="sobby"
+VERSION=0.4.7
+RELEASE=1
+CATEGORY="Net"
+SUMMARY="Standalone obby server"
+DESCRIPTION="sobby is a standalone obby server."
+HOMEPAGE="https://github.com/gobby/sobby"
+SRC_URI="http://releases.0x539.de/sobby/sobby-${VERSION}.tar.gz"
+PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/sobby.git/plain/0001-Fix-a-build-failure-when-compiled-using-glibmm-2.31-.patch
+	0.4.7-vpath.patch
+"
+
+DIFF_EXCLUDES="config.hpp.in"

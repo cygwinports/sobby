@@ -1,0 +1,10 @@
+--- origsrc/sobby-0.4.7/Makefile.am	2009-11-15 06:46:45.000000000 -0600
++++ src/sobby-0.4.7/Makefile.am	2015-06-01 20:45:38.190001600 -0500
+@@ -1,6 +1,6 @@
+ bin_PROGRAMS    = sobby
+ sobby_LDADD     = $(sobby_LIBS)
+-sobby_CPPFLAGS  = $(sobby_CFLAGS) -I../inc/
++sobby_CPPFLAGS  = $(sobby_CFLAGS) -I$(top_srcdir)/inc/
+ 
+ if WITH_ZEROCONF
+ if WITH_AVAHI
